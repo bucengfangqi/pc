@@ -1,3 +1,18 @@
-<p>
-  question works!
-</p>
+<div class="model_sub_title">
+  <div>The latest answer</div>
+  <div>最新问答</div>
+  <div></div>
+</div>
+
+<div class="question">
+  <div *ngFor="let item of question" class="q_and_a">
+    <div>
+      <div>#</div>
+      {{item.question}}
+    </div>
+    <div>
+      {{item.answer}}
+    </div>
+  </div>
+  
+</div>

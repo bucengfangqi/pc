@@ -1,5 +1,14 @@
 :host{
     display: block;
-    height: 375px;
-    background: lightskyblue;
+    background: rgb(28,99,236);
+    div{
+        position: relative;
+        width: 1200px;
+        height: 375px;
+        margin: 0 auto;
+        background: 
+        url(/assets/slide1.png)    /* image */
+        center center / auto 100% /* position / size */
+        no-repeat ;               /* repeat */
+    }
 }

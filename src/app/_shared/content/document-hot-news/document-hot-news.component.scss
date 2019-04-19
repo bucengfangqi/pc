@@ -1,0 +1,29 @@
+:host{
+    display: block;
+    width: 312px;
+    background: #FFF;
+    padding: 19px 14px 5px 24px;
+    margin-bottom: 15px;
+    .hot_news_list{
+        height: 342px;
+        overflow-y: scroll;
+        margin: 10px 0;
+        .flexBox{
+            margin-bottom: 11px;
+            cursor: pointer;
+            img{
+                width: 90px;
+                height: 60px;
+            }
+            >div:last-child{
+                width: 63%;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    } 
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}

@@ -1,0 +1,21 @@
+<div *ngFor="let item of news">
+  <div class="model_title">
+    <div>{{item.desc}}</div>
+    <div>{{newsMap[item.type]}}</div>
+    <div></div>
+  </div>
+  <div class="main_news flexBox" [routerLink]="['/document/'+item.type+'/'+item.list[0].id]">
+    <div>
+      <img [src]="item.list[0].picture">
+    </div>
+    <div>
+      <div>{{item.list[0].title}}</div>
+      <div>{{item.list[0].survey|formatstr:28}}</div>
+    </div>
+  </div>
+  <div class="titleList">
+    <div *ngFor="let items of item.list.slice(0,4)" [routerLink]="['/document/'+item.type+'/'+items.id]">
+      {{items.title}}
+    </div>
+  </div>
+</div>

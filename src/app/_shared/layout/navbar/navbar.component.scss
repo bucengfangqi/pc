@@ -1,0 +1,26 @@
+:host{
+    display: block;
+    background: #FFF;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    .navBar{
+        width: 1200px;
+        background: #FFF;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 107px;
+        .nav-link{
+            padding: 4px 31px 0;
+            line-height: 56px;
+            color: #000;
+            border-bottom: 4px solid transparent;
+        }
+        .router-link-active{
+            color: #2F54EB;
+            border-bottom: 4px solid #97AAF5;
+        }
+    }
+}

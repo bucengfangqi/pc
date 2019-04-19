@@ -1,0 +1,42 @@
+:host{
+    display: flex;
+    flex-wrap: wrap;
+    width: 792px;
+    padding: 19px 0;
+    >div{
+        width: 50%;
+        background: #FFF;
+        margin-bottom: 10px;
+        padding: 15px 33px 2px 50px;
+        .model_title div:first-child{
+            margin-left: -5px;
+        }
+        .main_news{
+            border-top: 1px solid #E5E5E5;
+            padding-top: 13px;
+            margin-top: 8px;
+            cursor: pointer;
+            img{
+                width: 120px;
+                height: 80px;
+            }
+            >div:last-child{
+                width: 58%;
+                div:last-child{
+                    font-size: 12px;
+                    color: #999;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .titleList{
+            padding: 22px 0 20px;
+            div{
+                line-height: 35px;
+                color: #333;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

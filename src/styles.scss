@@ -1,4 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-color: lightgray !important;
+    background-color:#F9F9F9 !important; 
+    font-size: 14px !important;
+}
+.flexBox{
+    display: flex;
+    justify-content: space-between;
+}
+.model_title{
+    :nth-child(1){
+        font-size: 17px;
+        font-weight: bold;
+        opacity: 0.1;
+        margin-left: -8px;
+    }
+    div:nth-child(2){
+        margin-top: -17px;
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+    }
+    div:nth-child(3){
+        width: 95px;
+        height: 12px;
+        position: relative;
+        z-index: 0;
+        top: -9px;
+        background: rgb(200,206,236);
+    }
+}
+
+.model_sub_title{
+    :nth-child(1){
+        font-size: 17px;
+        font-weight: bold;
+        opacity: 0.1;
+    }
+    div:nth-child(2){
+        margin-top: -13px;
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+    }
+    div:nth-child(3){
+        width: 24px;
+        height: 4px;
+        margin-top: 2px;
+        background: #1D3AB7;
+        opacity: 0.62;
+    }
 }

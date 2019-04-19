@@ -1,3 +1,20 @@
-<p>
-  product-desc works!
-</p>
+<div class="flexBox">
+  <div class="product_nav text-center">
+    <div *ngFor="let item of product" (click)="checked_product=item" [class.checked]="item===checked_product">
+      {{item.name}}
+    </div>
+  </div>
+  <div class="bg-white" [class.pt15]="!checked_product.tip">
+    <div class="tips" *ngIf="checked_product.tip">{{checked_product.tip}}</div>
+    <div class="flexBox productDetail">
+      <div>
+        <div>月息：<span>{{checked_product.month}}</span></div>
+        <div>额度：<span>{{checked_product.money}}</span></div>
+      </div>
+      <div>
+        <div>放款时间：<span>{{checked_product.time}}</span></div>
+        <div>成功率：<span>{{checked_product.success}}</span></div>
+      </div>
+    </div>
+  </div>
+</div>

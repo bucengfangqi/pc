@@ -1,3 +1,15 @@
-<p>
-  hotcase works!
-</p>
+<div class="model_sub_title">
+  <div>The latest case</div>
+  <div>最新案例</div>
+  <div></div>
+</div>
+
+<div class="swiper-container swiper-no-swiping" *ngIf="cases">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let item of cases">
+          <div>{{item.name+productMap[item.type]}}</div>
+          <div>申请额度：{{item.amount}}（已放款）</div>
+      </div>
+    </div>
+    <div class="gradient_bg"></div>
+  </div>

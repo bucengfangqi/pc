@@ -1,0 +1,15 @@
+:host{
+    display: block;
+    width: 790px;
+    height: 39px;
+    background: #1C66ED;
+    .nav{
+        padding: 0 12px;
+        .nav-link{
+            font-size: 12px;
+            color: #FFF;
+            padding: 0 12px;
+            line-height: 39px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<div class="model_sub_title">
+  <div>Latest news</div>
+  <div>热门资讯</div>
+  <div></div>
+</div>
+<div class="hot_news_list">
+  <div *ngFor="let item of hot_news_list" class="flexBox" [routerLink]="['/document/'+item.type+'/'+item.id]">
+    <div>
+      <img [src]="item.picture">
+    </div>
+    <div>
+      {{item.survey|formatstr:37}}
+    </div>
+  </div>
+</div>

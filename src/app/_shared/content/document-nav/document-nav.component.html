@@ -1,0 +1,6 @@
+<ul class="nav">
+  <li class="nav-item" *ngFor="let item of news">
+    <a class="nav-link" [routerLink]="['/document/'+item.type]"
+      routerLinkActive="router-link-active">{{newsMap[item.type]}}</a>
+  </li>
+</ul>

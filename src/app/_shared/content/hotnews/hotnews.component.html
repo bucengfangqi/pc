@@ -1,4 +1,15 @@
-<p>
-  hotnews works!
-</p>
-<a [routerLink]="['/home/5']" routerLinkActive="router-link-active" >最新资讯详情））</a>
+<div class="model_title">
+    <div>Latest news</div>
+    <div>最新资讯</div>
+    <div></div>
+</div>
+<div class="news_nav">
+    <div *ngFor="let item of news" (click)="checked_news=item" [class.checked]="checked_news===item">
+        {{item.name}}
+    </div>
+</div>
+<div *ngFor="let item of checked_news.list" class="news_detail" [routerLink]="['/document/'+checked_news.type+'/'+item.id]" routerLinkActive="router-link-active" >
+    <div>{{item.title}}</div>
+    <div>{{item.survey}}</div>
+    <div>{{item.createTime}}</div>
+</div>

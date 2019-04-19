@@ -1,6 +1,32 @@
 :host{
     display: block;
     width: 312px;
-    height: 354px;
-    background: rgba(0,0,100,0.5);
+    background: #FFF;
+    padding: 12px 24px 5px;
+    .question{
+        margin-top: 20px;
+        .q_and_a{
+            >div:first-child{
+                font-weight: bold;
+                position: relative;
+                div{
+                    display: inline-block;
+                    line-height: 16px;
+                    width: 16px;
+                    text-align: center;
+                    background: #1082FF;
+                    font-size: 12px;
+                    color: #FFF;
+                    border-radius: 16px;
+                    margin-right: 5px;
+                }
+            }
+            >div:last-child{
+                font-size: 12px;
+                color: #666;
+                margin: 10px 0;
+            }
+        }
+    }
+
 }

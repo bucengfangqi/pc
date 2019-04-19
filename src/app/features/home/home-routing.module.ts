@@ -1,13 +1,31 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DetailComponent } from './detail/detail.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
+import { NewsListComponent } from './news-list/news-list.component';
+import { HomeComponent } from './home/home.component';
+import { NewsListHomeComponent } from './news-list-home/news-list-home.component';
 const routes: Routes = [
-  { path: ':id', component: NewsDetailComponent, },
-
-  { path: '', redirectTo: '#', pathMatch: 'full' },
-  { path: '**', component: DetailComponent, }
+  {
+    path: '',
+    component: HomeComponent,
+    children: [
+      {
+        path: '',
+        component: NewsListComponent,
+        children: [
+          {
+            path: ':id',
+            component: NewsDetailComponent,
+          },
+          {
+            path: '',
+            component: NewsListHomeComponent
+          }
+        ]
+      }
+    ]
+  },
 ];
 
 @NgModule({

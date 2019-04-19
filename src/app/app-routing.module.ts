@@ -5,6 +5,7 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: './features/home/home.module#HomeModule',
+    data:{isShowSlide:true}
   },
   {
     path: 'product',
@@ -13,6 +14,7 @@ const routes: Routes = [
   {
     path: 'document',
     loadChildren: './features/document/document.module#DocumentModule',
+    data:{isShowSlide:true}
   },
   {
     path: 'mine',
