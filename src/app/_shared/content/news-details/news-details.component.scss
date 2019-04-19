@@ -1,6 +1,22 @@
 :host{
     display: block;
-    width: 673px;
-    height: 620px;
-    background: rgba(0,0,0,0.5);
+    width: 792px;
+    height: 758px;
+    background: #FFF;
+    padding: 20px 92px 21px 27px;
+    .news div{
+        color: #666;
+        &:nth-child(1){
+            font-size: 20px;
+            font-weight: bold;
+            color:#000;
+        }
+        &:nth-child(2){
+            margin: 8px 0;
+        }
+        &:nth-child(3){
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
 }

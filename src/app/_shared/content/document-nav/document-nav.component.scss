@@ -6,10 +6,33 @@
     .nav{
         padding: 0 12px;
         .nav-link{
-            font-size: 12px;
             color: #FFF;
-            padding: 0 12px;
-            line-height: 39px;
+            padding: 0;
+            span{
+                font-size: 12px;
+                padding: 0 12px;
+                line-height: 39px;
+                position: relative;
+                display: inline-block;
+                background: #1C66ED;
+            }
+        }
+    }
+    .router-link-active{
+        position: relative;
+        &::before{
+            content: "￥";
+            position: absolute;
+            top: -12px;
+            right: 26px;
+            font-size: 10px;
+            background: #1C66ED;
+            width: 19px;
+            height: 19px;
+            line-height: 19px;
+            text-align: center;
+            border-radius: 19px;
+            transform: rotate(-30deg);
         }
     }
 }

@@ -28,7 +28,7 @@ export class AppComponent {
       )
       .subscribe((data) => {
         this.isShowSlide = !data['isShowSlide'] === void (0) || data['isShowSlide'];
-        console.log(data);
+        
         
       });
   }

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { NewsDetailComponent } from './news-detail/news-detail.component';
 import { NewsListComponent } from './news-list/news-list.component';
 import { HomeComponent } from './home/home.component';
 import { NewsListHomeComponent } from './news-list-home/news-list-home.component';
@@ -14,10 +13,6 @@ const routes: Routes = [
         path: '',
         component: NewsListComponent,
         children: [
-          {
-            path: ':id',
-            component: NewsDetailComponent,
-          },
           {
             path: '',
             component: NewsListHomeComponent

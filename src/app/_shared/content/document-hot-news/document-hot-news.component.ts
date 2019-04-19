@@ -12,8 +12,12 @@ export class DocumentHotNewsComponent implements OnInit {
 
   ngOnInit() {
     news.forEach((newsItem)=>{
-      this.hot_news_list.push(newsItem.list[0])
-      this.hot_news_list.push(newsItem.list[1])
+      var news1=newsItem.list[0];
+      var news2=newsItem.list[1];
+      news1["type"]=newsItem.type;
+      news2["type"]=newsItem.type;
+
+      this.hot_news_list.push(news1,news2)
     })
   }
 
